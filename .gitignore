@@ -1,0 +1,26 @@
+node_modules
+public/*.js
+public/*.js.map
+.npmrc
+statistics.html
+dist/
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.vscode/
+*.sln
+*.suo
+*.ntvs*
+*.njsproj
+.vs/
+
+# TestCafe Local Config
+.testcaferc.json

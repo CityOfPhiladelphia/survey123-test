@@ -1,0 +1,36 @@
+{
+  "name": "survey-test",
+  "version": "0.0.1",
+  "description": "Example for using new layerboard topics functionality",
+  "main": "",
+  "repository": "https://github.com/cityofphiladelphia/topicsmaps",
+  "author": "City of Philadelphia <maps@phila.gov>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "dev-build": "vue-cli-service build --mode development"
+  },
+  "dependencies": {
+    "@philly/layerboard": "^0.0.35",
+    "@sentry/browser": "4.3.4",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-visualizer-plugin": "^0.1.11"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
