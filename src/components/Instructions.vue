@@ -1,11 +1,16 @@
 <template>
   <div class="background">
-    <h2 class="text-center "><b>How to use StreetSmartPHL</b></h2>
+    <h2 class="text-center ">
+      <b>How to use StreetSmartPHL</b>
+    </h2>
     <div class="grid-x align-center-middle">
-
       <div class="cell small-9 medium-3 text-center">
-        <div class="topic">PermitPHL</div>
-        <div class="topic">PavePHL</div>
+        <div class="topic">
+          PermitPHL
+        </div>
+        <div class="topic">
+          PavePHL
+        </div>
         <!-- <font-awesome-icon icon="check-square" class="fa-3x" aria-hidden="true" /> -->
       </div>
       <div class="cell small-15 medium-21 text-div">
@@ -14,7 +19,11 @@
       </div>
 
       <div class="cell small-9 medium-3 text-center">
-        <font-awesome-icon icon="check-square" class="fa-3x" aria-hidden="true" />
+        <font-awesome-icon
+          icon="check-square"
+          class="fa-3x"
+          aria-hidden="true"
+        />
       </div>
       <div class="cell small-15 medium-21 text-div">
         <p><b>If a topic offers checkboxes, toggle map layers on and off with them.</b></p>
@@ -22,7 +31,11 @@
       </div>
 
       <div class="cell small-9 medium-3 text-center">
-        <font-awesome-icon :icon="['far', 'circle']" class="fa-3x" aria-hidden="true" />
+        <font-awesome-icon
+          :icon="['far', 'circle']"
+          class="fa-3x"
+          aria-hidden="true"
+        />
       </div>
       <div class="cell small-15 medium-21 text-div">
         <p><b>If a topic offers radio buttons, select one to view a single map layer.</b></p>
@@ -30,7 +43,11 @@
       </div>
 
       <div class="cell small-9 medium-3 text-center">
-        <font-awesome-icon :icon="['far', 'square']" class="fa-3x" aria-hidden="true" />
+        <font-awesome-icon
+          :icon="['far', 'square']"
+          class="fa-3x"
+          aria-hidden="true"
+        />
       </div>
       <div class="cell small-15 medium-21 text-div">
         <p><b>If a checkbox is grayed out, zoom in further on the map and it will become active.</b></p>
@@ -38,7 +55,11 @@
       </div>
 
       <div class="cell small-9 medium-3 text-center">
-        <font-awesome-icon icon="map-marker-alt" class="fa-3x" aria-hidden="true" />
+        <font-awesome-icon
+          icon="map-marker-alt"
+          class="fa-3x"
+          aria-hidden="true"
+        />
       </div>
       <div class="cell small-15 medium-21 text-div">
         <p><b>Click on any feature that appears on the map to get a popup with that feature's info.</b></p>
@@ -46,7 +67,11 @@
       </div>
 
       <div class="cell small-9 medium-3 text-center">
-        <font-awesome-icon icon="search" class="fa-3x" aria-hidden="true" />
+        <font-awesome-icon
+          icon="search"
+          class="fa-3x"
+          aria-hidden="true"
+        />
       </div>
       <div class="cell small-15 medium-21 text-div">
         <p><b>Search for an address or intersection.</b></p>
@@ -54,13 +79,15 @@
       </div>
 
       <div class="cell small-9 medium-3 text-center">
-        <img class="street-view-image" :src="'images/cyclomedia_blue.png'">
+        <img
+          class="street-view-image"
+          :src="'images/cyclomedia_blue.png'"
+        >
       </div>
       <div class="cell small-15 medium-21 text-div">
         <p><b>Toggle on and off street view.</b></p>
         <p>Half of the map panel will be taken up by the street view. If you are zoomed in far enough, circles will appear along the streets in the map.  Click on a circle to change the street view location to that point.</p>
       </div>
-
     </div>
   </div>
 </template>
@@ -68,8 +95,8 @@
 <script>
 
 export default {
-  name: 'Instructions'
-}
+  name: 'Instructions',
+};
 
 </script>
 

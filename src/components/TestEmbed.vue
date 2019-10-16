@@ -12,35 +12,35 @@
       marginheight="0"
       marginwidth="0"
       title="JustHavingFun"
-      src="//survey123.arcgis.com/share/602fe37120d84ffba847d6229a355c21">
-    </iframe>
+      src="//survey123.arcgis.com/share/602fe37120d84ffba847d6229a355c21"
+    />
   </div>
 </template>
 
 <script>
 
-  export default {
-    name: 'TestEmbed',
-    mounted() {
-      var survey123webform = document.getElementsByName('survey123webform')[0];
-      window.addEventListener(
-        "message", e=> {
-          if(e.data){
-            var t=JSON.parse(e.data);
-            "survey123:onFormLoaded"===t.event
+export default {
+  name: 'TestEmbed',
+  computed: {
+    mapScale() {
+      return this.$store.state.map.scale;
+    },
+  },
+  mounted() {
+    var survey123webform = document.getElementsByName('survey123webform')[0];
+    window.addEventListener(
+      "message", e=> {
+        if(e.data){
+          var t=JSON.parse(e.data);
+          "survey123:onFormLoaded"===t.event
             &&t.contentHeight
             &&(survey123webform.parentNode.style.height=t.contentHeight+"px")
-            &&(survey123webform.parentNode.style["padding-bottom"]="unset")
-          }
+            &&(survey123webform.parentNode.style["padding-bottom"]="unset");
         }
-      );
-    },
-    computed: {
-      mapScale() {
-        return this.$store.state.map.scale;
       }
-    }
-  }
+    );
+  },
+};
 
 </script>
 

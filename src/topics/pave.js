@@ -6,8 +6,8 @@ export default {
     {
       type: 'paragraph',
       slots: {
-        text: 'View status of paving operations.'
-      }
+        text: 'View status of paving operations.',
+      },
     },
     {
       type: "radio-button-set",
@@ -16,14 +16,14 @@ export default {
           {
             title: "Streets Status for Paving Season",
             options: {
-              shouldShowSlider: false
-            }
+              shouldShowSlider: false,
+            },
           },
           {
             title: "Street Condition Index",
             options: {
-              shouldShowSlider: false
-            }
+              shouldShowSlider: false,
+            },
           },
           {
             title: "Most Recent Milling List",
@@ -45,26 +45,26 @@ export default {
                               label: "Hundred Block",
                               value: function(state, item) {
                                 return item.Hundred;
-                              }
+                              },
                             },
                             {
                               label: "On Street",
                               value: function(state, item) {
                                 return item.OnStreet;
-                              }
+                              },
                             },
                             {
                               label: "From Street",
                               value: function(state, item) {
                                 return item.FromStreet;
-                              }
+                              },
                             },
                             {
                               label: "To Street",
                               value: function(state, item) {
                                 return item.ToStreetNa;
-                              }
-                            }
+                              },
+                            },
                           ],
                           sort: {
                             // this should return the val to sort on
@@ -73,8 +73,8 @@ export default {
                               return item.OnStreet;
                             },
                             // asc or desc
-                            order: "asc"
-                          }
+                            order: "asc",
+                          },
                         },
                         slots: {
                           title: "Most Recent Milling List",
@@ -90,32 +90,31 @@ export default {
                             }
 
                             return weekMillData;
-                          }
-                        }
+                          },
+                        },
                       },
                       {
                         type: "SpanComp",
                         slots: {
                           text: function(state){
-                              var msg = '';
-                              if (state.sources.weekMill.data.length < 1)
-                              {
-                                 msg = 'There is no planned work for this week.';
-                              }
+                            var msg = '';
+                            if (state.sources.weekMill.data.length < 1) {
+                              msg = 'There is no planned work for this week.';
+                            }
 
-                             return msg;
-                          }
-                        }
-                      }
-                    ]
+                            return msg;
+                          },
+                        },
+                      },
+                    ],
                   },
                   slots: {
                     shouldShowValue: false,
-                    value: "Click to see Most Recent Milling List"
-                  }
-                }
-              ]
-            }
+                    value: "Click to see Most Recent Milling List",
+                  },
+                },
+              ],
+            },
           },
           {
             title: "Most Recent Paving List",
@@ -137,26 +136,26 @@ export default {
                               label: "Hundred Block",
                               value: function(state, item) {
                                 return item.Hundred;
-                              }
+                              },
                             },
                             {
                               label: "On Street",
                               value: function(state, item) {
                                 return item.OnStreet;
-                              }
+                              },
                             },
                             {
                               label: "From Street",
                               value: function(state, item) {
                                 return item.FromStreet;
-                              }
+                              },
                             },
                             {
                               label: "To Street",
                               value: function(state, item) {
                                 return item.ToStreetNa;
-                              }
-                            }
+                              },
+                            },
                           ],
                           sort: {
                             // this should return the val to sort on
@@ -165,8 +164,8 @@ export default {
                               return item.OnStreet;
                             },
                             // asc or desc
-                            order: "asc"
-                          }
+                            order: "asc",
+                          },
                         },
                         slots: {
                           title: "Most Recent Paving List",
@@ -180,45 +179,44 @@ export default {
 
                               });
                             }
-                                return weekPaveData;
-                          }
-                        }
+                            return weekPaveData;
+                          },
+                        },
                       },
                       {
                         type: "SpanComp",
                         slots: {
                           text: function(state){
-                              var msg = '';
-                              if (state.sources.weekPave.data.length < 1)
-                              {
-                                 msg = 'There is no planned work for this week.';
-                              }
+                            var msg = '';
+                            if (state.sources.weekPave.data.length < 1) {
+                              msg = 'There is no planned work for this week.';
+                            }
 
-                             return msg;
-                          }
-                        }
-                      }
-                    ]
+                            return msg;
+                          },
+                        },
+                      },
+                    ],
                   },
                   slots: {
                     shouldShowValue: false,
-                    value: "Click to see Most Recent Paving List"
-                  }
-                }
-              ]
-            }
-          }
+                    value: "Click to see Most Recent Paving List",
+                  },
+                },
+              ],
+            },
+          },
         ],
-        defaultTopicLayers: ["Streets Status for Paving Season"],
-        shouldShowDataLinks: false
-      }
+        defaultTopicLayers: [ "Streets Status for Paving Season" ],
+        shouldShowDataLinks: false,
+      },
     },
     {
       type: "division",
       options: {
         style: {
           background: '#f0f0f0',
-          padding: '8px'
+          padding: '8px',
         },
         components: [
           {
@@ -234,11 +232,11 @@ export default {
               <br>City crews provide a new layer of asphalt surface on the streets to protect the underlying road structure and improve the quality of the ride. Residents are required to move their car during these workdays.\
               <br><br><b>Step 4 Street Linestriping</b>\
               <br>The installation of placement markings and crosswalks is the final phase. Road surface markings are used on paved roadways to provide guidance and information to drivers and pedestrians. Striping is done over a series of days/weeks.\
-              <p><br><a target="blank" href="https://philadelphiastreets.com/images/uploads/documents/24040pro-PavingBooklet-8_5x11-SinglePage.pdf">Click to download</a> the new Paving Booklet.'
-            }
-          }
-        ]
+              <p><br><a target="blank" href="https://philadelphiastreets.com/images/uploads/documents/24040pro-PavingBooklet-8_5x11-SinglePage.pdf">Click to download</a> the new Paving Booklet.',
+            },
+          },
+        ],
       },
-    }
-  ]
+    },
+  ],
 };

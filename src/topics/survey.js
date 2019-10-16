@@ -7,10 +7,10 @@ export default {
       type: 'callout',
       slots: {
         text: 'Click on the map to show the problem location',
-      }
+      },
     },
     {
       type: 'test-embed-two',
-    }
-  ]
-}
+    },
+  ],
+};

@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="flex-div">
-      <div class="main-div"
-           :style="minWidth"
+      <div
+        class="main-div"
+        :style="minWidth"
       >
         <!-- <div class="maintenance-div">
           <p>Note: This site may down at different points for scheduled maintenance from 8:00 am to 12:00 pm on Sunday, 3/24/2019</p>
@@ -21,11 +22,19 @@
             <p>
               The data in this application refreshes every hour, so you may see the data refresh at these intervals.
             </p>
-             <p>
-                <input type="checkbox" id="showAgain" :checked="notShowAgain" @click='notShowSplashScreen()'>
-                <label for="showAgain">Do not show again</label>
+            <p>
+              <input
+                id="showAgain"
+                type="checkbox"
+                :checked="notShowAgain"
+                @click="notShowSplashScreen()"
+              >
+              <label for="showAgain">Do not show again</label>
             </p>
-            <a @click="close" class="button full-width uniform-font">Continue To Site</a>
+            <a
+              class="button full-width uniform-font"
+              @click="close"
+            >Continue To Site</a>
           </div>
         </div>
       </div>
@@ -39,17 +48,17 @@ export default {
   },
   data(){
     return {
-      notShowAgain: localStorage.notShowAgain == 'true' ? true : false
-    }
+      notShowAgain: localStorage.notShowAgain == 'true' ? true : false,
+    };
   },
   computed: {
     minWidth() {
       if (this.$store.state.isMobileOrTablet) {
         return;
-      } else {
-        return { minWidth: '550px' };
-      }
-    }
+      } 
+      return { minWidth: '550px' };
+      
+    },
   },
   methods: {
     close() {
@@ -60,15 +69,13 @@ export default {
 
     notShowSplashScreen() {
       if (localStorage.notShowAgain=='true') {
-          localStorage.notShowAgain = 'false';
-      }
-      else
-      {
+        localStorage.notShowAgain = 'false';
+      } else {
         localStorage.notShowAgain = 'true';
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>

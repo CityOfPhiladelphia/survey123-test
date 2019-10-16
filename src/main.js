@@ -68,7 +68,7 @@ const popoverConfig = {
       {
         'type': 'SplashScreen',
       },
-    ]
+    ],
   },
 };
 
@@ -87,14 +87,14 @@ layerboard(
             customStyle: { 'color': 'white', 'border-bottom': '0px' },
             components: [
               {
-                type: 'helpInstructions'
-              }
-            ]
+                type: 'helpInstructions',
+              },
+            ],
           },
           slots: {
             shouldShowValue: false,
-            value: 'Help'
-          }
+            value: 'Help',
+          },
         },
         {
           type: 'Anchor',
@@ -102,19 +102,19 @@ layerboard(
             text: 'Feedback',
             target: 'blank',
             customStyle: { 'color': 'white', 'border-bottom': '0px' },
-            href: '//philagsg.typeform.com/to/PsVSGg'
-          }
-        }
-      ]
+            href: '//philagsg.typeform.com/to/PsVSGg',
+          },
+        },
+      ],
     },
     bundled: true,
     layerFilter: false,
     router: {
-      enabled: false
+      enabled: false,
     },
     geolocation: {
       enabled: true,
-      icon: ['far', 'dot-circle']
+      icon: [ 'far', 'dot-circle' ],
     },
     addressInput: {
       width: 415,
@@ -128,12 +128,12 @@ layerboard(
       defaultBasemap: 'pwd',
       defaultIdentifyFeature: 'address-marker',
       imagery: {
-        enabled: true
+        enabled: true,
       },
       historicBasemaps: {
-        enabled: true
+        enabled: true,
       },
-      center: [-75.16347348690034, 39.952562122622254],
+      center: [ -75.16347348690034, 39.952562122622254 ],
       clickToIdentifyFeatures: true,
       containerClass: 'map-container-type2',
     },
@@ -158,7 +158,7 @@ layerboard(
     defaultPanel: 'topics',
     dataSources:{
       weekPave,
-      weekMill
+      weekMill,
     },
     topics: [
       survey,
@@ -172,14 +172,14 @@ layerboard(
         type: 'paragraph',
         slots: {
           text: "<h2>Welcome to Survey123 Test Site</h2>\
-          Testing Survey123"
-        }
+          Testing Survey123",
+        },
       },
       {
         type: 'topic-set',
       },
     ],
-    modals: ['help'],
+    modals: [ 'help' ],
   },
   //obj
 );
