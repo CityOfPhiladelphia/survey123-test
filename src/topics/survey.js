@@ -4,11 +4,12 @@ export default {
   label: 'Survey123',
   components: [
     {
-      type: 'callout',
-      slots: {
-        text: 'Click on the map to show the problem location',
-      },
+      type: 'locationForm',
+      // slots: {
+      //   text: 'Click on the map to show the problem location',
+      // },
     },
+    
     {
       type: 'test-embed-two',
     },

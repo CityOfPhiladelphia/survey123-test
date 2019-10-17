@@ -35,13 +35,13 @@ import permit from './topics/permit';
 import instructions from './components/Instructions.vue';
 import splashScreen from './components/SplashScreen.vue';
 import testEmbed from './components/TestEmbed.vue';
-import testEmbed2 from './components/TestEmbed2.vue';
+import locationForm from './components/LocationForm.vue';
 
 const customComps = {
   'helpInstructions': instructions,
   'SplashScreen': splashScreen,
-  'TestEmbed': testEmbed,
-  'TestEmbedTwo': testEmbed2,
+  'TestEmbedTwo': testEmbed,
+  'locationForm': locationForm,
 };
 
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/layerboard-default-base-config@8e227b2abe04a0dee3a327ccab9d7dc49e1b6354/config.js';
