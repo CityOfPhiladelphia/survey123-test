@@ -669,6 +669,26 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@esri/arcgis-rest-feature-layer@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@esri/arcgis-rest-feature-layer/-/arcgis-rest-feature-layer-2.5.0.tgz#93d518b6b18073a68968582b71df42fad74e697c"
+  integrity sha512-QMJ4eBtPux6ngJ3F37nommENhnB3zffmDmv3jkPBdWppGxpTXOaXQdKjATMw0e/9HUDL+DEWpF3bdBIXzphL8Q==
+  dependencies:
+    "@esri/arcgis-rest-types" "^2.5.0"
+    tslib "^1.9.3"
+
+"@esri/arcgis-rest-request@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@esri/arcgis-rest-request/-/arcgis-rest-request-2.5.0.tgz#73e1368d73f57661907475c64f30097c47831f37"
+  integrity sha512-AHDuP44HPhJXl5aO9LtHblcRyOmsR40bQjtpkwLtU5y2t/poXsrvPFdon+SYRYWRhDIIXPaFRi1A9BxyHgN4wg==
+  dependencies:
+    tslib "^1.9.3"
+
+"@esri/arcgis-rest-types@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@esri/arcgis-rest-types/-/arcgis-rest-types-2.5.0.tgz#5808cb13eb7c0f3bf24948ecad372e6a1f97ebae"
+  integrity sha512-y7i/CjCRRiCWXZfj11PyxYY9rL14fq+9wE3B7k1m7Ef2Urp6yCB1LCDmVtNDFCbfvxU0ouybhsp2cMG24BYG8w==
+
 "@esri/arcgis-to-geojson-utils@^1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@esri/arcgis-to-geojson-utils/-/arcgis-to-geojson-utils-1.3.0.tgz#79ab65bf3e40c039dbdebceff4b3b0ec088b189c"
@@ -818,13 +838,13 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@philly/layerboard@https://github.com/CityOfPhiladelphia/layerboard#d72d6271de6a1141d96bdcd7c95748fc3415bb94":
+"@philly/layerboard@https://github.com/CityOfPhiladelphia/layerboard#0fa732d462315cdfe70bf40cacc5a712e437ccde":
   version "0.0.35"
-  resolved "https://github.com/CityOfPhiladelphia/layerboard#d72d6271de6a1141d96bdcd7c95748fc3415bb94"
+  resolved "https://github.com/CityOfPhiladelphia/layerboard#0fa732d462315cdfe70bf40cacc5a712e437ccde"
   dependencies:
     "@philly/vue-comps" "^1.0.42"
     "@philly/vue-datafetch" "^0.0.27"
-    "@philly/vue-mapping" "https://github.com/CityOfPhiladelphia/phila-vue-mapping#864f0b931b580f7c9e58c236cd59887d9c39e6a9"
+    "@philly/vue-mapping" "https://github.com/CityOfPhiladelphia/phila-vue-mapping#0da18068d840726e340a5803bb004c88c983cf22"
     vue "^2.6.10"
     vuex "^3.1.1"
 
@@ -862,9 +882,9 @@
     vue "^2.6.10"
     vuex "^3.1.1"
 
-"@philly/vue-mapping@https://github.com/CityOfPhiladelphia/phila-vue-mapping#864f0b931b580f7c9e58c236cd59887d9c39e6a9":
+"@philly/vue-mapping@https://github.com/CityOfPhiladelphia/phila-vue-mapping#0da18068d840726e340a5803bb004c88c983cf22":
   version "1.0.43"
-  resolved "https://github.com/CityOfPhiladelphia/phila-vue-mapping#864f0b931b580f7c9e58c236cd59887d9c39e6a9"
+  resolved "https://github.com/CityOfPhiladelphia/phila-vue-mapping#0da18068d840726e340a5803bb004c88c983cf22"
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.15"
     "@fortawesome/free-regular-svg-icons" "^5.7.2"

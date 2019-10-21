@@ -15,7 +15,9 @@
     "lintFix": "vue-cli-service lint --fix"
   },
   "dependencies": {
-    "@philly/layerboard": "https://github.com/CityOfPhiladelphia/layerboard#d72d6271de6a1141d96bdcd7c95748fc3415bb94",
+    "@esri/arcgis-rest-feature-layer": "^2.5.0",
+    "@esri/arcgis-rest-request": "^2.5.0",
+    "@philly/layerboard": "https://github.com/CityOfPhiladelphia/layerboard#0fa732d462315cdfe70bf40cacc5a712e437ccde",
     "@sentry/browser": "4.3.4",
     "vue": "^2.6.10"
   },
