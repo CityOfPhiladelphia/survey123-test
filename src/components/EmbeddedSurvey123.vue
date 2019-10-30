@@ -12,15 +12,18 @@
       marginheight="0"
       marginwidth="0"
       title="LayerboardTest"
-      src="//survey123.arcgis.com/share/602fe37120d84ffba847d6229a355c21?hide=navbar,header,footer,theme,description"
+      :src="options.url"
     />
+    <!-- src="//survey123.arcgis.com/share/602fe37120d84ffba847d6229a355c21?hide=navbar,header,footer,theme,description" -->
   </div>
 </template>
 
 <script>
+import TopicComponent from '@philly/vue-comps/src/components/TopicComponent.vue';
 
 export default {
-  name: 'TestEmbed',
+  name: 'EmbeddedSurvey123',
+  mixins: [ TopicComponent ],
   computed: {
     mapScale() {
       return this.$store.state.map.scale;

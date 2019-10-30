@@ -1,17 +1,13 @@
 export default {
-  key: 'survey',
-  icon: 'poll-h',
-  label: 'Survey123',
+  key: 'customform',
+  icon: 'scroll',
+  label: 'Custom Form',
   components: [
     {
       type: 'locationForm',
       // slots: {
       //   text: 'Click on the map to show the problem location',
       // },
-    },
-    
-    {
-      type: 'test-embed-two',
     },
   ],
 };

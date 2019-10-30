@@ -1,11 +1,3 @@
-/*
-  _________ __                         __   _________                      __
-/   _____//  |________   ____   _____/  |_/   _____/ _____ _____ ________/  |_
-\_____  \\   __\_  __ \_/ __ \_/ __ \   __\_____  \ /     \\__  \\_  __ \   __\
-/        \|  |  |  | \/\  ___/\  ___/|  | /        \  Y Y  \/ __ \|  | \/|  |
-/_______  /|__|  |__|    \___  >\___  >__|/_______  /__|_|  (____  /__|   |__|
-      \/                   \/     \/            \/      \/     \/
-*/
 
 // turn off console logging in production
 const { hostname='' } = location;
@@ -28,24 +20,21 @@ import weekPave from './data-sources/week-pave';
 import weekMill from './data-sources/week-mill';
 
 // Topics
-import survey from './topics/survey';
-import pave from './topics/pave';
-import permit from './topics/permit';
+import customForm from './topics/customForm';
+import embeddedSurvey from './topics/embeddedSurvey123';
+import linkedSurvey from './topics/linkedSurvey123';
 
 import instructions from './components/Instructions.vue';
-import splashScreen from './components/SplashScreen.vue';
-import testEmbed from './components/TestEmbed.vue';
+import embeddedSurvey123 from './components/EmbeddedSurvey123.vue';
 import locationForm from './components/LocationForm.vue';
 
 const customComps = {
   'helpInstructions': instructions,
-  'SplashScreen': splashScreen,
-  'TestEmbedTwo': testEmbed,
+  'embeddedSurvey123': embeddedSurvey123,
   'locationForm': locationForm,
 };
 
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/layerboard-default-base-config@8e227b2abe04a0dee3a327ccab9d7dc49e1b6354/config.js';
-// var BASE_CONFIG_URL = 'config.js';
 var GATEKEEPER_KEY = 'ec8681f792812d7e3ff15e9094bfd4ad';
 var WEBMAP_ID = 'e12f33308a8742df827f33a8408a6d07';
 
@@ -61,22 +50,22 @@ if (host === 'topicsmap-dev.s3-website-us-east-1.amazonaws.com') {
 
 const notShowAgain = localStorage.notShowAgain == 'true' ? true : false;
 
-const popoverConfig = {
-  options: {
-    'height': '100%',
-    'components': [
-      {
-        'type': 'SplashScreen',
-      },
-    ],
-  },
-};
+// const popoverConfig = {
+//   options: {
+//     'height': '100%',
+//     'components': [
+//       {
+//         'type': 'SplashScreen',
+//       },
+//     ],
+//   },
+// };
 
-const initialPopover = notShowAgain ? null : popoverConfig;
+// const initialPopover = notShowAgain ? null : popoverConfig;
 
 layerboard(
   {
-    splashScreen,
+    // splashScreen,
     customComps,
     footerContent: {
       components: [
@@ -161,11 +150,11 @@ layerboard(
       weekMill,
     },
     topics: [
-      survey,
-      permit,
-      pave,
+      customForm,
+      embeddedSurvey,
+      linkedSurvey,
     ],
-    initialPopover,
+    // initialPopover,
     defaultTopic: null,
     components: [
       {
