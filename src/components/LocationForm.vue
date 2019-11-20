@@ -67,17 +67,17 @@ export default {
           {
             "geometry" : { "x" : -75.163471, "y" : 39.953338 },
             "attributes" : {
-              "problemType" : "fromApp2"
-            }
-          }
-        ]
+              "problemType" : "fromApp2",
+            },
+          },
+        ],
       })
-      .then(function (response) {
-        console.log('response:', response);
-      })
-      .catch(function (error) {
-        console.log('error:', error);
-      })
+        .then(function (response) {
+          console.log('response:', response);
+        })
+        .catch(function (error) {
+          console.log('error:', error);
+        });
       // axios.post('https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/layerboard_test/FeatureServer/0/addFeatures', {
       //   // token: '4QMbSzmB7M_XXVd_CNghWs7InQrgKGMjlb60u-J2g77SXQ_ZzBTRWFt_RuOrBSNlcdjFlzY9JbLfpe9XDUe53EhJ3bNGiXr_2XK7JwzA9cRmtOKJAWJpUkclLEWr9QLvAmCFMaMnXysgxJoK1R9pp1wAyvVpK3ZtQQCeOJWAC0nRIPxtkhFAsvQhMo01RKgFkytiheQ7gwsApaVaPB5YB_iUJ6wvKqFWevxHawbWQa7uFnIB-kv0xuGJIzdd0tz3',
       //   f: 'pjson',
@@ -96,7 +96,7 @@ export default {
       // .catch(function (error) {
       //   console.log('error:', error);
       // })
-    }
+    },
   },
 };
 </script>

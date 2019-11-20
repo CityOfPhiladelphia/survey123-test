@@ -20,7 +20,7 @@ export default {
             return 'https://survey123.arcgis.com/share/602fe37120d84ffba847d6229a355c21';
           }
         },
-      }
+      },
     },
   ],
 };
