@@ -1,5 +1,5 @@
 /*
-                                        ____________  ________             __                   __   
+                                        ____________  ________             __                   __
 ________ ____________  __ ____ ___.__. /_   \_____  \ \_____  \          _/  |_  ____   _______/  |_
 /  ___/  |  \_  __ \  \/ // __ <   |  |  |   |/  ____/   _(__  <   ______ \   __\/ __ \ /  ___/\   __\
 \___ \|  |  /|  | \/\   /\  ___/\___  |  |   /       \  /       \ /_____/  |  | \  ___/ \___ \  |  |
@@ -34,16 +34,19 @@ import linkedSurvey from './topics/linkedSurvey123';
 import instructions from './components/Instructions.vue';
 import embeddedSurvey123 from './components/EmbeddedSurvey123.vue';
 import locationForm from './components/LocationForm.vue';
+import badge2 from './components/Badge_2.vue';
 
 const customComps = {
+  'badge2': badge2,
   'helpInstructions': instructions,
   'embeddedSurvey123': embeddedSurvey123,
   'locationForm': locationForm,
 };
 
-var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/layerboard-default-base-config@8e227b2abe04a0dee3a327ccab9d7dc49e1b6354/config.js';
+var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/layerboard-default-base-config@50f224cec6c23f638d8303182bc3527e4cfc4399/config.js';
 var GATEKEEPER_KEY = 'ec8681f792812d7e3ff15e9094bfd4ad';
-var WEBMAP_ID = 'e12f33308a8742df827f33a8408a6d07';
+// var WEBMAP_ID = 'e12f33308a8742df827f33a8408a6d07';
+var WEBMAP_ID = '6358e390e9c34d5db565ff9f494b5311';
 
 let pictApiKey, pictSecretKey;
 const host = window.location.hostname;
@@ -132,6 +135,7 @@ layerboard(
       center: [ -75.16347348690034, 39.952562122622254 ],
       clickToIdentifyFeatures: true,
       containerClass: 'map-container-type2',
+      basemaps: {},
     },
     cyclomedia: {
       enabled: true,
