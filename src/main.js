@@ -46,7 +46,10 @@ const customComps = {
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/layerboard-default-base-config@50f224cec6c23f638d8303182bc3527e4cfc4399/config.js';
 var GATEKEEPER_KEY = 'ec8681f792812d7e3ff15e9094bfd4ad';
 // var WEBMAP_ID = 'e12f33308a8742df827f33a8408a6d07';
-var WEBMAP_ID = '6358e390e9c34d5db565ff9f494b5311';
+// var WEBMAP_ID = '6358e390e9c34d5db565ff9f494b5311';
+// var WEBMAP_ID = '02cdd87cbeb94d128ec4754005b02554';
+// var WEBMAP_ID = 'f4a3c398635f4da2b476d6a973154ba1';
+var WEBMAP_ID = '395b6bc66d4945bb854348f8889eaf4c';
 
 let pictApiKey, pictSecretKey;
 const host = window.location.hostname;
