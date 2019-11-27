@@ -14,6 +14,12 @@ export default {
             },
           },
           {
+            title: 'Street Closures',
+            options: {
+              shouldShowSlider: false,
+            },
+          },
+          {
             title: 'Problem Reports',
             options: {
               shouldShowSlider: false,
