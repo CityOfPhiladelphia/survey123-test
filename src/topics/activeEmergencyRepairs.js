@@ -1,8 +1,7 @@
-
 export default {
-  key: 'customform',
+  key: 'activeEmergencyRepairs',
   icon: 'scroll',
-  label: 'Custom Form',
+  label: 'Active Emergency Repairs',
   components: [
     {
       type: 'badge2',
@@ -25,23 +24,17 @@ export default {
       options: {
         topicLayers: [
           {
-            title: 'ProblemReports - Point layer',
+            title: 'Public - Point layer',
             options: {
               shouldShowSlider: false,
             },
           },
         ],
         defaultTopicLayers: [
-          'PWD_ProblemReports - Point layer',
+          'Public - Point layer',
         ],
         shouldShowDataLinks: false,
       },
-    },
-    {
-      type: 'locationForm',
-      // slots: {
-      //   text: 'Click on the map to show the problem location',
-      // },
     },
   ],
 };
