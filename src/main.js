@@ -30,7 +30,7 @@ import weekMill from './data-sources/week-mill';
 import customForm from './topics/customForm';
 import embeddedSurvey from './topics/embeddedSurvey123';
 import linkedSurvey from './topics/linkedSurvey123';
-import activeEmergencyRepairs from './topics/activeEmergencyRepairs';
+import layers from './topics/layers';
 
 import instructions from './components/Instructions.vue';
 import embeddedSurvey123 from './components/EmbeddedSurvey123.vue';
@@ -168,7 +168,7 @@ layerboard(
       customForm,
       embeddedSurvey,
       linkedSurvey,
-      activeEmergencyRepairs,
+      layers,
     ],
     // initialPopover,
     defaultTopic: null,

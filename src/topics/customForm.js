@@ -9,32 +9,15 @@ export default {
       slots: {
         title: 'test badge',
         titleBackground: '#58c04d',
-        value: function(state) {
+        value: function() {
           return 'test';
           // return state.geocode.data.properties.high_school;
         },
-        description: function(state) {
+        description: function() {
           return 'test2';
           // return state.geocode.data.properties.zoning;
           // return ZONING_CODE_MAP[code];
         },
-      },
-    },
-    {
-      type: 'checkbox-set',
-      options: {
-        topicLayers: [
-          {
-            title: 'ProblemReports - Point layer',
-            options: {
-              shouldShowSlider: false,
-            },
-          },
-        ],
-        defaultTopicLayers: [
-          'PWD_ProblemReports - Point layer',
-        ],
-        shouldShowDataLinks: false,
       },
     },
     {
