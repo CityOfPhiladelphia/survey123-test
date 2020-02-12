@@ -33,7 +33,7 @@
 
 <script>
 // console.log('in Badge.vue script');
-import TopicComponent from '@philly/vue-comps/src/components/TopicComponent.vue';
+import TopicComponent from '@phila/vue-comps/src/components/TopicComponent.vue';
 // import TopicComponent from './TopicComponent.vue';
 // import ExternalLink from './ExternalLink.vue';
 

@@ -8,6 +8,18 @@ export default {
       options: {
         topicLayers: [
           {
+            title: 'ows csocast raingauge status',
+            options: {
+              shouldShowSlider: false,
+            },
+          },
+          {
+            title: 'ows csocast outfall status',
+            options: {
+              shouldShowSlider: false,
+            },
+          },
+          {
             title: 'Water Repairs',
             options: {
               shouldShowSlider: false,

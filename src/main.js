@@ -18,9 +18,10 @@ import { faScroll } from '@fortawesome/free-solid-svg-icons/faScroll';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons/faTrashAlt';
 import { faPollH } from '@fortawesome/free-solid-svg-icons/faPollH';
 import { faRoad } from '@fortawesome/free-solid-svg-icons/faRoad';
-library.add(faSnowflake, faScroll, faTrashAlt, faPollH, faRoad);
+import { faAnchor } from '@fortawesome/free-solid-svg-icons/faAnchor';
+library.add(faSnowflake, faScroll, faTrashAlt, faPollH, faRoad, faAnchor);
 
-import layerboard from '@philly/layerboard/src/main.js';
+import layerboard from '@phila/layerboard/src/main.js';
 
 // data-sources
 import weekPave from './data-sources/week-pave';
@@ -31,6 +32,7 @@ import customForm from './topics/customForm';
 import embeddedSurvey from './topics/embeddedSurvey123';
 import linkedSurvey from './topics/linkedSurvey123';
 import layers from './topics/layers';
+import testTopic from './topics/testTopic';
 
 import instructions from './components/Instructions.vue';
 import embeddedSurvey123 from './components/EmbeddedSurvey123.vue';
@@ -45,7 +47,6 @@ const customComps = {
 };
 
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/layerboard-default-base-config@50f224cec6c23f638d8303182bc3527e4cfc4399/config.js';
-var GATEKEEPER_KEY = 'ec8681f792812d7e3ff15e9094bfd4ad';
 // var WEBMAP_ID = 'e12f33308a8742df827f33a8408a6d07';
 // var WEBMAP_ID = '6358e390e9c34d5db565ff9f494b5311';
 // var WEBMAP_ID = '02cdd87cbeb94d128ec4754005b02554';
@@ -79,7 +80,16 @@ const notShowAgain = localStorage.notShowAgain == 'true' ? true : false;
 
 layerboard(
   {
-    // splashScreen,
+    geocoder: {
+      url: function (input) {
+        var inputEncoded = encodeURIComponent(input);
+        return '//api.phila.gov/ais/v1/search/' + inputEncoded;
+      },
+      params: {
+        gatekeeperKey: process.env.VUE_APP_GATEKEEPER_KEY,
+        include_units: true,
+      },
+    },
     customComps,
     footerContent: {
       components: [
@@ -138,7 +148,7 @@ layerboard(
       },
       center: [ -75.16347348690034, 39.952562122622254 ],
       clickToIdentifyFeatures: true,
-      containerClass: 'map-container-type2',
+      containerClass: 'map-container',
       basemaps: {},
     },
     cyclomedia: {
@@ -156,7 +166,7 @@ layerboard(
       apiKey: pictApiKey,
       secretKey: pictSecretKey,
     },
-    gatekeeperKey: GATEKEEPER_KEY,
+    gatekeeperKey: process.env.VUE_APP_GATEKEEPER_KEY,
     baseConfig: BASE_CONFIG_URL,
     webmapId: WEBMAP_ID,
     defaultPanel: 'topics',
@@ -169,6 +179,7 @@ layerboard(
       embeddedSurvey,
       linkedSurvey,
       layers,
+      testTopic,
     ],
     // initialPopover,
     defaultTopic: null,
