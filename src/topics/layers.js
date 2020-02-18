@@ -8,7 +8,13 @@ export default {
       options: {
         topicLayers: [
           {
-            title: 'ows csocast raingauge status',
+            title: 'Test Layer',
+            options: {
+              shouldShowSlider: false,
+            },
+          },
+          {
+            title: 'Combined Sewer Overflow Status',
             options: {
               shouldShowSlider: false,
             },
